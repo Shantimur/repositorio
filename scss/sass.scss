@@ -1,0 +1,56 @@
+/*OPERACIONES*/
+$titulos__tamano: 35px;
+$titulos__padding: 60px;
+
+
+/*Imagenes Main*/ 
+
+.tit__img{
+    font-size: $titulos__tamano;
+    padding: $titulos__padding;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.imagenes__main{
+    h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    div{
+
+        grid-row: auto;
+        padding: 5%;
+
+        img{
+            height: 45vh;
+            align-items: center;
+        }
+    }
+}
+
+.tit__img{
+    font-size: $titulos__tamano;
+    padding: $titulos__padding;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Actividades Main*/
+
+.actividades__main{
+    h1{
+        @extend .tit__img;
+    }
+}
+
+
+/*Contacto Main*/
+
+
+.contacto__main{
+    h1{
+        @extend .tit__img;
+    }
+}

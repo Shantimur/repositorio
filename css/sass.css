@@ -1,0 +1,36 @@
+/*OPERACIONES*/
+/*Imagenes Main*/
+.tit__img, .actividades__main h1, .contacto__main h1 {
+  font-size: 35px;
+  padding: 60px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.imagenes__main h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.imagenes__main div {
+  grid-row: auto;
+  padding: 5%;
+}
+
+.imagenes__main div img {
+  height: 45vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tit__img, .actividades__main h1, .contacto__main h1 {
+  font-size: 35px;
+  padding: 60px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*Actividades Main*/
+/*Contacto Main*/
+/*# sourceMappingURL=sass.css.map */
