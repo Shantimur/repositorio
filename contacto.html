@@ -15,7 +15,7 @@
     <meta name="keywords" content="Hostel, Valentia, diversion, estadia, contacto, redes, numero, instagram, whatsapp">
     <meta name="description" content="Nuestros medios de contacto, instagram, email, whatsapp y numero telefonico para que realices tus consultas y puedas gestionar tu reserva">
 </head>
-<body>
+<body class="contacto-body">
     
     <header>
         <nav>
@@ -33,7 +33,8 @@
     </header>
 
     <main class="contacto__main">
-        <h1>Contacto</h1>
+        <h1>Ubicacion y Contacto</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4902.797465875759!2d-71.65137571266605!3d-40.753510014201765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610bf6f3a0c9ac3%3A0xe74526394dd66819!2sAlojamiento!5e0!3m2!1ses-419!2sar!4v1632256305051!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="medios-de-contacto">
             <div class="whatsapp">
                 <img src="./multimedia/whatsapp.png" alt="icono de whatsapp" class="img__contacto">
@@ -57,22 +58,30 @@
         </div>
 
 
-        <div class="container">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="" placeholder="Ingrese su Nombre">
-
-                    <label for="mail">Mail:</label>
-                    <input type="email" name="mail" placeholder="Ingrese su mail">
-
-                    <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto" id="" placeholder="Ingrese el asunto">
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el mensaje"></textarea>
-
-                    <button type="submit" class="btn btn-default">Enviar</button>
+        <div class="container px-5 my-5">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="mb-3">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre">
+                    <div class="invalid-feedback" data-sb-feedback="nombre:required">Se requiere su nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="emailAddress">Email Address</label>
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Ingrese su email">
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Se requiere su email.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">El Email que ingreso no es valido.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="asunto">Asunto</label>
+                    <input class="form-control" id="asunto" type="text" placeholder="Ingrese el asunto">
+                    <div class="invalid-feedback" data-sb-feedback="asunto:required">Se requiere un asunto.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Ingrese el mensaje" style="height: 10rem;"></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-default" id="btn-enviar">Enviar</button>
                 </div>
             </form>
         </div>
