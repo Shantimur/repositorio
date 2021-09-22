@@ -48,66 +48,73 @@
 
     <main class="contacto__main">
         <h1>Ubicacion y Contacto</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4902.797465875759!2d-71.65137571266605!3d-40.753510014201765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610bf6f3a0c9ac3%3A0xe74526394dd66819!2sAlojamiento!5e0!3m2!1ses-419!2sar!4v1632256305051!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="medios-de-contacto">
-            <div class="whatsapp">
+
+        <section class="map-n-phot">
+            <img src="./multimedia/imagen_relleno.jpeg" alt="living hostel" width="450" height="425">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5456.152750900445!2d-71.65016775138658!3d-40.75534977860478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9610bf6f3a0c9ac3%3A0xe74526394dd66819!2sAlojamiento!5e1!3m2!1ses-419!2sar!4v1632348110956!5m2!1ses-419!2sar" width="450" height="425" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <h2>Contactanos!</h2>
+        <section class="medios-de-contacto">
+            <div class="medios_hijos">
                 <img src="./multimedia/whatsapp.png" alt="icono de whatsapp" class="img__contacto">
                 <p>2944 28-7978</p>
             </div>
 
-            <div class="telefono">
+            <div class="medios_hijos">
                 <img src="./multimedia/telefono.png" alt="icono de telefono" class="img__contacto">
                 <p>0294 839-3321</p>
             </div>
 
-            <div class="facebook">
+            <div class="medios_hijos">
                 <img src="./multimedia/facebook.png" alt="logo de facebook" class="img__contacto">
                 <p>Posada Valentia</p>
             </div>
 
-            <div class="instagram">
+            <div class="medios_hijos">
                 <img src="./multimedia/instagram.png" alt="logo de instagram" class="img__contacto">
                 <p>posadavalentia_</p>
             </div>
-        </div>
+        </section>
 
-
-        <div class="container px-5 my-5">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="form-floating mb-3">
-                    <label for="nombre">Nombre</label>
-                    <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
-                    <div class="invalid-feedback" data-sb-feedback="nombre:required">El nombre es requerido para enviar el formulario.</div>
-                </div>
-                <div class="form-floating mb-3">
-                    <label for="email">Email</label>
-                    <input class="form-control" id="email" type="email" placeholder="Ingrese su email" data-sb-validations="required,email" />
-                    <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido para enviar el formulario.</div>
-                    <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
-                </div>
-                <div class="form-floating mb-3">
-                    <label for="asunto">Asunto</label>
-                    <input class="form-control" id="asunto" type="text" placeholder="Ingrese el asunto" data-sb-validations="required" />
-                    <div class="invalid-feedback" data-sb-feedback="asunto:required">El asunto es requerido para enviar el formulario.</div>
-                </div>
-                <div class="form-floating mb-3">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" type="text" placeholder="Ingrese el mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
-                    <div class="invalid-feedback" data-sb-feedback="mensaje:required">El mensaje es requerido para enviar el formulario.</div>
-                </div>
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                        <div class="fw-bolder">El formulario se envio exitosamente!</div>
+        <section class="formulario">
+            <div class="container px-5 my-5">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="form-floating mb-3">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="nombre:required">El nombre es requerido para enviar el formulario.</div>
                     </div>
-                </div>
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Ha ocurrido un error a la hora de enviar tu formulario :( Por favor vuelva a intentarlo</div>
-                </div>
-                <div class="d-grid">
-                    <button class="btn btn-light disabled" id="submitButton" type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
+                    <div class="form-floating mb-3">
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" placeholder="Ingrese su email" data-sb-validations="required,email" />
+                        <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido para enviar el formulario.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="asunto">Asunto</label>
+                        <input class="form-control" id="asunto" type="text" placeholder="Ingrese el asunto" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="asunto:required">El asunto es requerido para enviar el formulario.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" type="text" placeholder="Ingrese el mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="mensaje:required">El mensaje es requerido para enviar el formulario.</div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">El formulario se envio exitosamente!</div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Ha ocurrido un error a la hora de enviar tu formulario :( Por favor vuelva a intentarlo</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-light disabled" id="submitButton" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
 

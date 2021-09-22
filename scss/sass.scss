@@ -3,6 +3,14 @@ $titulos__tamano: 35px;
 $titulos__padding: 60px;
 
 
+/*logo*/
+#logo{
+    height: 80px;
+    width: auto; 
+    transform: translateX(20px);
+  }
+
+
 /*Imagenes Main*/ 
 
 .tit__img{
@@ -16,16 +24,19 @@ $titulos__padding: 60px;
     h3{
         font-size: 20px;
         text-align: center;
+        padding-bottom: 5vh;
     }
 
     div{
 
-        grid-row: auto;
-        padding: 5%;
-
+        display: grid;
+        grid-template-columns: 68vh 68vh;
+        justify-content: center;
+        padding-bottom: 5vh;
+        grid-row-gap: 0.5px;
         img{
             height: 45vh;
-            align-items: center;
+
         }
     }
 }
@@ -42,6 +53,27 @@ $titulos__padding: 60px;
 .actividades__main{
     h1{
         @extend .tit__img;
+        padding-bottom: 15px;
+    }
+    h2{
+        padding-bottom: 60px;
+        text-align: center;
+        opacity: 90%;
+        font-size: 27px;
+    }
+    
+
+    .act-afu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        h3{
+            font-size: 20px;
+        }
+        iframe{
+            display: flex;
+        }
     }
 }
 
@@ -53,10 +85,26 @@ $titulos__padding: 60px;
     h1{
         @extend .tit__img;
     }
-    .medios-de-contacto{
+    .map-n-phot{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    h2{
+        @extend .tit__img
+    }
 
-        .whatsapp{
-            
+    .medios-de-contacto{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        padding-top: 5rem;
+        padding: 10px;
+        .medios_hijos{
+            display: flex;
+            padding: 10px;
+            padding-left: 8rem;
+            padding-right: 8rem;
         }
     }
 }

@@ -33,6 +33,17 @@
   background-size: cover;
 }
 
+@media (max-width: 770px) {
+  #titulo{
+    padding: 311px;
+  }
+}
+
+@media (max-width: 481px) {
+  #titulo{
+    padding: 150px;
+    }
+}
 
 #descripcion{
   color: black;
@@ -50,6 +61,12 @@
   align-items: center;
 }
 
+@media (max-width: 481px) {
+  .ft{
+    height: 30vh;
+    width: 65vh;
+    }
+}
 
 /* FOOTER GRAL */
 
@@ -64,9 +81,6 @@
 }
 
 @media (max-width: 650px) {
-  #titulo{
-      padding: 250px;
-  }
   .finalPag{
       flex-direction: column;
   }
