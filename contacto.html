@@ -18,19 +18,33 @@
 <body class="contacto-body">
     
     <header>
-        <nav>
-            <ul class= "inicio">
-                <h2><img src="./multimedia/logoDelHostel.png" alt="Logo Posada del Buscador" id="logo" class="menuu"></h2>
-                <div class="menu">
-                    <a href="index.html"><li class="items-menu">Home</li></a>
-                    <a href="habitaciones.html"><li class="items-menu">Habitaciones</li></a>
-                    <a href="imagenes.html"><li class="items-menu">Imágenes</li></a>
-                    <a href="actividades.html"><li class="items-menu">Actividades</li></a>
-                    <a href="contacto.html"><li class="items-menu">Contacto</li></a>
-                </div>
-            </ul>
-        </nav>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light nav-agregado">
+            <a class="navbar-brand" href="./index.html"><img id="logo" src="./multimedia/logoDelHostel.png" alt="logoDelHostel"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active hov">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item active hov">
+              <a class="nav-link active" href="./habitaciones.html">Habitaciones</a>
+            </li>
+            <li class="nav-item active hov">
+              <a class="nav-link" href="./imagenes.html">Imagenes</a>
+            </li>
+            <li class="nav-item active hov">
+              <a class="nav-link" href="./actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item active hov">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
+
 
     <main class="contacto__main">
         <h1>Ubicacion y Contacto</h1>
@@ -60,28 +74,37 @@
 
         <div class="container px-5 my-5">
             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <div class="mb-3">
-                    <label class="form-label" for="nombre">Nombre</label>
-                    <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre">
-                    <div class="invalid-feedback" data-sb-feedback="nombre:required">Se requiere su nombre.</div>
+                <div class="form-floating mb-3">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="nombre:required">El nombre es requerido para enviar el formulario.</div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="emailAddress">Email Address</label>
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Ingrese su email">
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Se requiere su email.</div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">El Email que ingreso no es valido.</div>
+                <div class="form-floating mb-3">
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="email" placeholder="Ingrese su email" data-sb-validations="required,email" />
+                    <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido para enviar el formulario.</div>
+                    <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="asunto">Asunto</label>
-                    <input class="form-control" id="asunto" type="text" placeholder="Ingrese el asunto">
-                    <div class="invalid-feedback" data-sb-feedback="asunto:required">Se requiere un asunto.</div>
+                <div class="form-floating mb-3">
+                    <label for="asunto">Asunto</label>
+                    <input class="form-control" id="asunto" type="text" placeholder="Ingrese el asunto" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="asunto:required">El asunto es requerido para enviar el formulario.</div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="message">Message</label>
-                    <textarea class="form-control" id="message" type="text" placeholder="Ingrese el mensaje" style="height: 10rem;"></textarea>
+                <div class="form-floating mb-3">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" type="text" placeholder="Ingrese el mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <div class="invalid-feedback" data-sb-feedback="mensaje:required">El mensaje es requerido para enviar el formulario.</div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">El formulario se envio exitosamente!</div>
+                    </div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Ha ocurrido un error a la hora de enviar tu formulario :( Por favor vuelva a intentarlo</div>
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-default" id="btn-enviar">Enviar</button>
+                    <button class="btn btn-light disabled" id="submitButton" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
@@ -94,5 +117,11 @@
     <p>Whatsapp: (+549) 2944 28-7978</p>
 </footer>
 
+
+
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

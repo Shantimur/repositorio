@@ -10,56 +10,18 @@
 
 /* HEADER GRAL */
 
-header{
-  background-color: #ede9e185;
+.nav-agregado{
+  background-color: #b4a58885;
+}
 
+.hov:hover{
+  text-decoration: line-through;
 }
 
 #logo{
   height: 80px;
   width: auto; 
   transform: translateX(20px);
-}
-
-.inicio{
-  display: flex;
-  justify-content: space-between;
-  margin-right: 5vh;
-  margin-left: 7.5vh;  
-  margin-bottom: 0%;
-}
-
-
-.menu{
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-
-}
-
-.items-menu{
-  font-size: 16px;
-  list-style: none;
-  color: black;
-  text-decoration: none;
-  margin: 1vh;
-  transition: 2s;
-}
-
-.items-menu:hover{
-  text-decoration: line-through;
-}
-
-.items-submenu{
-  font-size: 2vh;
-  color: black;
-  display: none;
-  text-decoration: none;
-}
-
-.items-menu:hover .items-submenu{
-  display: flex;
-
 }
 
 /* MAIN HOME */
