@@ -2,6 +2,10 @@
 $titulos__tamano: 35px;
 $titulos__padding: 60px;
 
+/*IMPORTS*/
+@import "reset";
+@import "header";
+
 
 /*logo*/
 #logo{
