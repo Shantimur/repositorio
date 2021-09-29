@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*OPERACIONES*/
 /*IMPORTS*/
 * {
@@ -27,12 +28,220 @@
           transform: translateX(20px);
 }
 
-/*logo*/
-#logo {
-  height: 80px;
-  width: auto;
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
+/* FOOTER GRAL */
+.finalPag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px;
+  background-color: #252222;
+  color: white;
+  background-size: cover;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .finalPag {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+  .finalPag {
+    font-size: 13px;
+  }
+}
+
+/*Home Main*/
+#titulo {
+  color: black;
+  text-align: center;
+  background-image: url(../multimedia/montaña.jpg);
+  padding: 325px;
+  background-size: cover;
+  margin: 0%;
+}
+
+@media (max-width: 770px) {
+  #titulo {
+    padding: 311px;
+  }
+}
+
+@media (max-width: 481px) {
+  #titulo {
+    padding: 150px;
+  }
+}
+
+#descripcion {
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  background-color: #EDE9E1;
+  padding: 30px 5px;
+}
+
+.ft {
+  height: 60vh;
+  width: 85vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 481px) {
+  .ft {
+    height: 30vh;
+    width: 65vh;
+  }
+}
+
+/*Habitaciones Main*/
+main {
+  background-color: #e3dbc7c7;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5%;
+}
+
+.intro__hijos--principal {
+  font-size: 35px;
+  padding: 60px;
+  text-decoration: underline;
+}
+
+.intro__hijos--secundario {
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.habitaciones-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15%;
+  padding-right: 10%;
+}
+
+.habitaciones-container__matrimoniales {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "descripcion foto1" "descripcion foto2";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px black;
+  padding-bottom: 5%;
+}
+
+.habitaciones-container__matrimoniales div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: descripcion;
+}
+
+.foto--matrimonial1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto1;
+}
+
+.foto--matrimonial2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+}
+
+.habitaciones-container__standard {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "descripcion foto1" "descripcion foto2";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5%;
+}
+
+.habitaciones-container__standard div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: descripcion;
+}
+
+.foto--standard1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto1;
+}
+
+.foto--standard2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto1;
+}
+
+.habitaciones-container__deluxe {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "descripcion foto1" "descripcion foto2";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4%;
+}
+
+.habitaciones-container__deluxe div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: descripcion;
+}
+
+.foto--deluxe1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto1;
+}
+
+.foto--deluxe2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+}
+
+.foto {
+  height: 25vh;
+  width: 45vh;
+  padding: 0.5%;
 }
 
 /*Imagenes Main*/
