@@ -204,9 +204,9 @@ main {
 }
 
 .foto--standard2 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: foto1;
+  grid-area: foto2;
 }
 
 .habitaciones-container__deluxe {
@@ -330,6 +330,16 @@ main {
   padding-bottom: 1rem;
 }
 
+.contacto__main .map-n-phot img {
+  height: 425px;
+  width: 450px;
+}
+
+.contacto__main .map-n-phot iframe {
+  height: 425px;
+  width: 450px;
+}
+
 .contacto__main .medios-de-contacto {
   display: -ms-grid;
   display: grid;
@@ -351,14 +361,18 @@ main {
   padding-right: 8rem;
 }
 
+.contacto__main .form-agregado {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+
 .img__contacto {
   height: 4vh;
 }
 
-#logo {
-  height: 80px;
-  width: auto;
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
+@media (max-width: 770px) {
+  .relleno_ {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sass.css.map */

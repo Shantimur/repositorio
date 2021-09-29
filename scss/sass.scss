@@ -123,10 +123,8 @@ main{
   grid-area: foto1;
 }
 .foto--standard2{
-  grid-area: foto1;
+  grid-area: foto2;
 }
-
-
 
 .habitaciones-container__deluxe{
   display: grid;
@@ -233,10 +231,19 @@ main{
         display: flex;
         justify-content: center;
         padding-bottom: 1rem;
+        img{
+          height: 425px;
+          width: 450px;
+        }
+        iframe{
+          height: 425px;
+          width: 450px;
+        }
     }
     h2{
         @extend .tit__img
     }
+
 
     .medios-de-contacto{
         display: grid;
@@ -251,14 +258,20 @@ main{
             padding-right: 8rem;
         }
     }
-}
+   
+    .form-agregado{
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+    }
+  }
+  
 
 .img__contacto{
     height: 4vh;
 }
 
-#logo{
-    height: 80px;
-    width: auto; 
-    transform: translateX(20px);
+@media (max-width: 770px) {
+  .relleno_{
+    display: none;
   }
+}
