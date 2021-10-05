@@ -36,20 +36,39 @@ $titulos__padding: 60px;
     text-align: center;
     background-color: #EDE9E1;
     padding: 30px 5px;
+    padding-left: 10vh;
+    padding-right: 10vh;
+
+    h2{
+      text-decoration: underline;
+      padding-bottom: 3vh;
+    }
   }
   
   
   .ft{
-    height: 60vh;
-    width: 85vh;
     flex-direction: row;
     align-items: center;
   }
   
+  @media (min-width: 1024px){
+    .ft{
+      height: 60vh;
+      width: 85vh;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .ft{
+      height: 45vh;
+      width: 70vh;
+    }
+  }
+
   @media (max-width: 481px) {
     .ft{
-      height: 30vh;
-      width: 65vh;
+      height: 20vh;
+      width: 35vh;
       }
   }
 
