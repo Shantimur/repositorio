@@ -320,8 +320,8 @@ main {
         grid-template-columns: auto;
   }
   .imagenes__main div .ft_lugarcomun {
-    height: 45vh;
-    width: 69vh;
+    height: 40vh;
+    width: 64vh;
   }
 }
 
