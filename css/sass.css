@@ -57,7 +57,7 @@
   }
 }
 
-/*Home Main*/
+/*Home Main hecho en css pasado a sass*/
 #titulo {
   color: black;
   text-align: center;
@@ -125,7 +125,7 @@
   }
 }
 
-/*Habitaciones Main*/
+/*Habitaciones Main hecho en css pasado a sass*/
 main {
   background-color: #e3dbc7c7;
 }
@@ -280,24 +280,49 @@ main {
 .imagenes__main div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 68vh 68vh;
-      grid-template-columns: 68vh 68vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 5vh;
-  grid-row-gap: 0.5px;
 }
 
-.imagenes__main div img {
-  height: 45vh;
+.imagenes__main div .ft_lugarcomun {
+  padding: 0.5px;
 }
 
-.tit__img, .actividades__main h1, .contacto__main h1, .contacto__main h2 {
-  font-size: 35px;
-  padding: 60px;
-  text-align: center;
-  text-decoration: underline;
+@media (min-width: 770px) {
+  .imagenes__main div {
+    -ms-grid-columns: 68vh 68vh;
+        grid-template-columns: 68vh 68vh;
+  }
+  .imagenes__main div .ft_lugarcomun {
+    height: 45vh;
+    width: 69vh;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 769px) {
+  .imagenes__main div {
+    -ms-grid-columns: 68vh 68vh;
+        grid-template-columns: 68vh 68vh;
+  }
+  .imagenes__main div .ft_lugarcomun {
+    height: 45vh;
+    width: 69vh;
+    padding-right: 4px;
+  }
+}
+
+@media (max-width: 650px) {
+  .imagenes__main div {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .imagenes__main div .ft_lugarcomun {
+    height: 45vh;
+    width: 69vh;
+  }
 }
 
 /*Actividades Main*/

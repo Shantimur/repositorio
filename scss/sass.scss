@@ -7,7 +7,7 @@ $titulos__padding: 60px;
 @import "header";
 @import "footer";
 
-/*Home Main*/
+/*Home Main hecho en css pasado a sass*/
 
 #titulo{
     color: black;
@@ -72,7 +72,7 @@ $titulos__padding: 60px;
       }
   }
 
-/*Habitaciones Main*/
+/*Habitaciones Main hecho en css pasado a sass*/
 
 main{
     background-color: #e3dbc7c7;
@@ -191,22 +191,54 @@ main{
     div{
 
         display: grid;
-        grid-template-columns: 68vh 68vh;
         justify-content: center;
         padding-bottom: 5vh;
-        grid-row-gap: 0.5px;
-        img{
-            height: 45vh;
-
+        .ft_lugarcomun{
+            padding: 0.5px;
         }
     }
 }
 
-.tit__img{
-    font-size: $titulos__tamano;
-    padding: $titulos__padding;
-    text-align: center;
-    text-decoration: underline;
+
+@media (min-width: 770px) {
+  .imagenes__main{
+    div{
+      grid-template-columns: 68vh 68vh;
+      
+        .ft_lugarcomun{
+          height: 45vh;
+          width: 69vh;
+          padding-right: 8px;
+        }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .imagenes__main{
+    div{
+      grid-template-columns: 68vh 68vh;
+
+        .ft_lugarcomun{
+          height: 45vh;
+          width: 69vh;
+          padding-right: 4px;
+        }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .imagenes__main{
+    div{
+      grid-template-columns: auto;
+
+        .ft_lugarcomun{
+          height: 45vh;
+          width: 69vh;
+        }
+    }
+  }
 }
 
 /*Actividades Main*/
