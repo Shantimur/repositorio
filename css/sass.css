@@ -169,92 +169,89 @@ main {
   padding-right: 10%;
 }
 
-.habitaciones-container__matrimoniales {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "descripcion foto1" "descripcion foto2";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5px black;
-  padding-bottom: 5%;
+@media (min-width: 1023px) {
+  .habitaciones-container__matrimoniales {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "descripcion foto1" "descripcion foto2";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px black;
+    padding-bottom: 5%;
+  }
+  .habitaciones-container__matrimoniales div {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+  }
+  .foto--matrimonial1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: foto1;
+  }
+  .foto--matrimonial2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: foto2;
+  }
 }
 
-.habitaciones-container__matrimoniales div {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: descripcion;
+@media (min-width: 1023px) {
+  .habitaciones-container__standard {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "descripcion foto1" "descripcion foto2";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5%;
+  }
+  .habitaciones-container__standard div {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+  }
+  .foto--standard1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: foto1;
+  }
+  .foto--standard2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: foto2;
+  }
 }
 
-.foto--matrimonial1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: foto1;
-}
-
-.foto--matrimonial2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: foto2;
-}
-
-.habitaciones-container__standard {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "descripcion foto1" "descripcion foto2";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 5%;
-}
-
-.habitaciones-container__standard div {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: descripcion;
-}
-
-.foto--standard1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: foto1;
-}
-
-.foto--standard2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: foto2;
-}
-
-.habitaciones-container__deluxe {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "descripcion foto1" "descripcion foto2";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 4%;
-}
-
-.habitaciones-container__deluxe div {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: descripcion;
-}
-
-.foto--deluxe1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: foto1;
-}
-
-.foto--deluxe2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: foto2;
+@media (min-width: 1023px) {
+  .habitaciones-container__deluxe {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "descripcion foto1" "descripcion foto2";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 4%;
+  }
+  .habitaciones-container__deluxe div {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+  }
+  .foto--deluxe1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: foto1;
+  }
+  .foto--deluxe2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: foto2;
+  }
 }
 
 .foto {

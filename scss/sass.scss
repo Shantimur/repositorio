@@ -103,66 +103,69 @@ main{
   padding-left: 15%;
   padding-right: 10%;
 }
+@media (min-width: 1023px){
+  .habitaciones-container__matrimoniales{
+    display: grid;
+    grid-template-areas: "descripcion foto1"
+    "descripcion foto2";
+    align-items: center;
+    margin-bottom: 5px black;
+    padding-bottom: 5%;
+  }
 
-.habitaciones-container__matrimoniales{
-  display: grid;
-  grid-template-areas: "descripcion foto1"
-  "descripcion foto2";
-  align-items: center;
-  margin-bottom: 5px black;
-  padding-bottom: 5%;
+  .habitaciones-container__matrimoniales div{
+    grid-area: descripcion;
+  }
+
+  .foto--matrimonial1{
+    grid-area: foto1;
+  }
+
+  .foto--matrimonial2{
+    grid-area: foto2;
+  }
 }
 
-.habitaciones-container__matrimoniales div{
-  grid-area: descripcion;
+@media (min-width: 1023px){
+  .habitaciones-container__standard{
+    display: grid;
+    grid-template-areas: "descripcion foto1"
+    "descripcion foto2"    ;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+
+  .habitaciones-container__standard div{
+    grid-area: descripcion;
+  }
+
+  .foto--standard1{
+    grid-area: foto1;
+  }
+  .foto--standard2{
+    grid-area: foto2;
+  }
 }
 
-.foto--matrimonial1{
-  grid-area: foto1;
-}
-
-.foto--matrimonial2{
-  grid-area: foto2;
-}
-
-
-.habitaciones-container__standard{
-  display: grid;
-  grid-template-areas: "descripcion foto1"
-  "descripcion foto2"    ;
-  align-items: center;
-  padding-bottom: 5%;
-}
-
-.habitaciones-container__standard div{
-  grid-area: descripcion;
-}
-
-.foto--standard1{
-  grid-area: foto1;
-}
-.foto--standard2{
-  grid-area: foto2;
-}
-
-.habitaciones-container__deluxe{
-  display: grid;
-  grid-template-areas: "descripcion foto1"
-  "descripcion foto2"    ;
-  align-items: center;
-  padding-bottom: 4%; 
-
-}
-
-.habitaciones-container__deluxe div{
-  grid-area: descripcion;
-}
-
-.foto--deluxe1{
-  grid-area: foto1;
-}
-.foto--deluxe2{
-  grid-area: foto2;
+@media (min-width: 1023px) {
+  .habitaciones-container__deluxe{
+    display: grid;
+    grid-template-areas: "descripcion foto1"
+    "descripcion foto2";
+    align-items: center;
+    padding-bottom: 4%; 
+  }
+  
+  .habitaciones-container__deluxe div{
+    grid-area: descripcion;
+  }
+  
+  .foto--deluxe1{
+    grid-area: foto1;
+  }
+  .foto--deluxe2{
+    grid-area: foto2;
+  }
 }
 
 .foto{
@@ -170,6 +173,7 @@ main{
   width: 45vh;
   padding: 0.5%;
 }
+
 
 
 /*Imagenes Main*/ 
