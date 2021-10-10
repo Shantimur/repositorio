@@ -85,8 +85,8 @@
   text-align: center;
   background-color: #EDE9E1;
   padding: 30px 5px;
-  padding-left: 10vh;
-  padding-right: 10vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
 #descripcion h2 {
@@ -138,9 +138,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   padding-bottom: 5%;
 }
 
@@ -152,9 +150,8 @@ main {
 
 .intro__hijos--secundario {
   font-size: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
 .habitaciones-container {
@@ -169,6 +166,11 @@ main {
   padding-right: 10%;
 }
 
+.habitaciones-container h2 {
+  font-size: 25px;
+  text-decoration: overline;
+}
+
 @media (min-width: 1023px) {
   .habitaciones-container__matrimoniales {
     display: -ms-grid;
@@ -180,7 +182,7 @@ main {
     margin-bottom: 5px black;
     padding-bottom: 5%;
   }
-  .habitaciones-container__matrimoniales div {
+  .habitaciones-container__matrimoniales .matrimonial-intro {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
@@ -208,7 +210,7 @@ main {
             align-items: center;
     padding-bottom: 5%;
   }
-  .habitaciones-container__standard div {
+  .habitaciones-container__standard .standard-intro {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
@@ -236,7 +238,7 @@ main {
             align-items: center;
     padding-bottom: 4%;
   }
-  .habitaciones-container__deluxe div {
+  .habitaciones-container__deluxe .deluxe-intro {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
@@ -258,6 +260,25 @@ main {
   height: 25vh;
   width: 45vh;
   padding: 0.5%;
+}
+
+@media (max-width: 1022px) {
+  .habitaciones-container h2 {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .habitaciones-container p {
+    padding: 5px;
+    text-align: center;
+  }
+  .habitaciones-container .foto-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 /*Imagenes Main*/
@@ -328,16 +349,17 @@ main {
 }
 
 .actividades__main h2 {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-align: center;
   opacity: 90%;
-  font-size: 27px;
+  font-size: 22px;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
 .actividades__main .tipos_de_act .act-en-hostel h3 {
-  font-size: 25px;
+  font-size: 22px;
   padding: 40px;
-  padding-top: 10px;
   text-align: center;
   text-decoration: underline;
 }
@@ -374,6 +396,13 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 767px) {
+  .act-afu iframe {
+    width: 600px;
+    height: 355px;
+  }
 }
 
 /*Contacto Main*/
