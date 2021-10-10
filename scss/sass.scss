@@ -197,6 +197,16 @@ main{
   }
 }
 
+@media (max-width: 767px) {
+  .habitaciones-container{  
+    .foto-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
 
 /*Imagenes Main*/ 
 
