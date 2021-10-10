@@ -303,6 +303,58 @@ main{
         h4{
           font-size: 20px;
         }
+        .actividades-container{
+          display: flex;
+
+            .pool-container{
+              display: flex;
+              flex-direction: column;
+              background-color: #b4a58885;
+              margin: 10px;
+                p{
+                  text-align: center;
+                }
+                div{
+                  display: flex;
+                  justify-content: center;
+                }
+            }
+
+            .pingpong-container{
+              display: flex;
+              flex-direction: column;
+              background-color: #b4a58885;
+              margin: 5px;
+                p{
+                  text-align: center;
+                }
+                div{
+                  display: flex;
+                  justify-content: center;
+                }
+            }
+
+            .bar-container{
+              display: flex;
+              flex-direction: column;
+              background-color: #b4a58885;
+              margin: 5px;
+                p{
+                  text-align: center;
+                }
+                div{
+                  display: flex;
+                  justify-content: center;
+                }
+            }
+        }
+        
+        .act--foto{
+          height: 30vh;
+          width: 55vh;
+
+        }
+        
       }
 
       .act-afu{
@@ -323,6 +375,12 @@ main{
       }
     }
 }
+@media (max-width: 767px) {
+  .actividades-container{
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 767px) {
   .act-afu{
   

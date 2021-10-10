@@ -383,6 +383,92 @@ main {
   font-size: 20px;
 }
 
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .pool-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #b4a58885;
+  margin: 10px;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .pool-container p {
+  text-align: center;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .pool-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .pingpong-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #b4a58885;
+  margin: 5px;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .pingpong-container p {
+  text-align: center;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .pingpong-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #b4a58885;
+  margin: 5px;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .bar-container p {
+  text-align: center;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .actividades-container .bar-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.actividades__main .tipos_de_act .act-en-hostel .act--foto {
+  height: 30vh;
+  width: 55vh;
+}
+
 .actividades__main .tipos_de_act .act-afu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,6 +497,15 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .actividades-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (min-width: 767px) {
